@@ -9,6 +9,13 @@ body {
 
 .controls {
     grid-row-start: controls;
+
+    display: grid;
+    grid-template-columns: [year] 25% [seats] 25% [dc] 25% [apportionment] 25%;
+}
+
+.control {
+    text-align: center;
 }
 
 #voteResults
@@ -17,7 +24,6 @@ body {
     display: grid;
     grid-template-columns: [dem] 50% [repub] auto;
     grid-template-rows: [header] 2rem [centerBar] 10px [results] auto;
-
 }
 
 #candidates
@@ -84,7 +90,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: [header] 1rem [controls] 1rem [results] 100px [map] auto;
+    grid-template-rows: [header] 1rem [results] 100px [controls] 1rem [map] auto;
     grid-template-columns: auto;
     grid-gap: 1rem;
 }

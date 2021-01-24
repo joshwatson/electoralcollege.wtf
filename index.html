@@ -9,9 +9,6 @@
             <div class="header">
                 <h1>electoral college: wtf???</h1>
             </div>
-            <div class="controls">
-
-            </div>
             <div id="voteResults">
                 <div id="candidates">
                     <div id="demCandidate">Hillary Clinton<br />blah votes</div>
@@ -20,6 +17,26 @@
                 <div id="centerBar">|</div>
                 <div id="democratResults"></div>
                 <div id="republicanResults"></div>
+            </div>
+            <div class="controls">
+                <div class="control">Year: 
+                    <select id="yearSelect">
+                        <option>2000</option>
+                        <option>2004</option>
+                        <option>2008</option>
+                        <option>2012</option>
+                        <option>2016</option>
+                        <option>2020</option>
+                    </select></div>
+                <div class="control">
+                    House Seats: <input id="seats" type="range" min=435 max=1000 value=435 /> <span id="currentSeats">435</span>
+                </div>
+                <div class="control">DC Statehood? <input type="checkbox" id="dcStatehood"/></div>
+                <div class="control">Apportionment: 
+                    <select id="apportionment">
+                        <option>Hill Method</option>
+                    </select>
+                </div>
             </div>
             <div class="map">
                 <object id="svg-object" data="us.svg" type="image/svg+xml" width="75%"></object>

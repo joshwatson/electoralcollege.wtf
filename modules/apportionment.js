@@ -33,13 +33,14 @@ export function hillMethod(states, year, seats, DCstatehood=false)
     while (totalSeats < seats)
     {
         var nextSeat = Object.keys(stateA).reduce(function(a, b){ return stateA[a] > stateA[b] ? a : b });
-        console.log(nextSeat)
         var n = ++stateSeats[nextSeat];
-
+        console.log(nextSeat)
         stateA[nextSeat] *= Math.sqrt((n-1)/(n+1));
 
         totalSeats++;
     }
+
+    console.log(totalSeats)
 
     for (var state in states)
     {
