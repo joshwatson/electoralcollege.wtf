@@ -1,0 +1,90 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    grid-row-start: header;
+    text-align: center;
+}
+
+.controls {
+    grid-row-start: controls;
+}
+
+#voteResults
+{
+    grid-row-start: results;
+    display: grid;
+    grid-template-columns: [dem] 50% [repub] auto;
+    grid-template-rows: [header] 2rem [centerBar] 10px [results] auto;
+
+}
+
+#candidates
+{
+    grid-row-start: header;
+    grid-column: dem / span 2;
+    height: 2rem;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: [dem] 50% [repub] 50%;
+}
+
+#demCandidate
+{
+    grid-column-start: dem;
+    width: 100%;
+    text-align: left;
+}
+
+#repubCandidate
+{
+    grid-column-start: repub;
+    width: 100%;
+    text-align: right;
+}
+
+#centerBar
+{
+    grid-column: dem / span 2;
+    grid-row-start: centerBar;
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+#democratResults
+{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 50px;
+    grid-row-start: dem;
+    font-size: 44px;
+}
+
+#republicanResults
+{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    grid-row-start: repub;
+    text-align: right;
+    color: white;
+    font-size: 44px;
+}
+
+.map
+{
+    grid-row-start: map;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: [header] 1rem [controls] 1rem [results] 100px [map] auto;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
