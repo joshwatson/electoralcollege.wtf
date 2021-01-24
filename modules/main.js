@@ -12,7 +12,7 @@ window.addEventListener(
 
         var year = 2000;
 
-        var EVs = hillMethod(states, year, 491, false);
+        var EVs = hillMethod(states, year, 435, false);
 
         var rEVs = 0;
         var dEVs = 0;
