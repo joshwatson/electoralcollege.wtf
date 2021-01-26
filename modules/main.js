@@ -130,10 +130,12 @@ function update() {
     if (popularVote[year]['D'] > popularVote[year]['R'])
     {
         document.getElementById("demCandidate").style.fontWeight = "bold";
+        document.getElementyById("repubCandidate").style.fontWeight = "normal";
     }
     else
     {
         document.getElementById("repubCandidate").style.fontWeight = "bold";
+        document.getElementyById("demCandidate").style.fontWeight = "normal";
     }
 
     if (dEVs > rEVs)
