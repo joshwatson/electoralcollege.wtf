@@ -5,6 +5,11 @@ export const popularVote = {
     2012: {'D': 65915795, 'R': 60933504},
     2016: {'D': 65853514, 'R': 62984828},
     2020: {'D': 81268757, 'R': 74216722},
+    2024: {'D': 75019230, 'R': 77303568},
+}
+
+export const prPopularVote = {
+    2024: {'D': 724947, 'R': 263270},
 }
 
 export const candidates = {
@@ -13,5 +18,6 @@ export const candidates = {
     2008: {'D': "Barack Obama", 'R': "John McCain"},
     2012: {'D': "Barack Obama", 'R': "Mitt Romney"},
     2016: {'D': "Hillary Clinton", 'R': "Donald J. Trump"},
-    2020: {'D': "Joseph Biden", 'R': "Donald J. Trump"}
+    2020: {'D': "Joseph Biden", 'R': "Donald J. Trump"},
+    2024: {'D': "Kamala Harris", 'R': "Donald J Trump"},
 }
